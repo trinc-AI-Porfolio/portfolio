@@ -1,66 +1,88 @@
-import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import ProjectGrid from "@/components/ProjectGrid";
+import DashboardSection from "@/components/DashboardSection";
+import Footer from "@/components/Footer";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <>
+      <Navbar />
+      <main>
+        {/* ── Hero ─────────────────────────── */}
+        <Hero />
+
+        {/* ── Projects ─────────────────────── */}
+        <section id="projects" className="section">
+          <div className="container">
+            <p className="section-label">Dự Án</p>
+            <h2 className="section-title">
+              Các Dự Án{" "}
+              <span className="gradient-text">Thực Tế</span>
+            </h2>
+            <p className="section-subtitle" style={{ marginBottom: 48 }}>
+              Tổng hợp các dự án về data analytics, machine learning và phát
+              triển web — click để xem demo hoặc dashboard tương tác.
+            </p>
+            <ProjectGrid />
+          </div>
+        </section>
+
+        {/* ── Dashboards ───────────────────── */}
+        <section id="dashboards" className={`section ${styles.dashSection}`}>
+          <div className="container">
+            <p className="section-label">Dashboard</p>
+            <h2 className="section-title">
+              Live{" "}
+              <span className="gradient-text-pink">Dashboard</span>
+            </h2>
+            <p className="section-subtitle" style={{ marginBottom: 48 }}>
+              Thử nghiệm trực tiếp các dashboard phân tích dữ liệu. Chọn dự
+              án bên trái để xem dữ liệu thực tế.
+            </p>
+            <DashboardSection />
+          </div>
+        </section>
+
+        {/* ── About ────────────────────────── */}
+        <section id="about" className="section">
+          <div className="container">
+            <div className={styles.aboutGrid}>
+              <div>
+                <p className="section-label">Giới Thiệu</p>
+                <h2 className="section-title">
+                  Về <span className="gradient-text">Tôi</span>
+                </h2>
+                <p style={{ color: "var(--text-secondary)", lineHeight: 1.8, marginTop: 16 }}>
+                  Tôi là một developer đam mê xây dựng các giải pháp dữ liệu và web. 
+                  Chuyên về phân tích dữ liệu, machine learning và xây dựng dashboard 
+                  tương tác giúp doanh nghiệp đưa ra quyết định tốt hơn.
+                </p>
+                <div className={styles.skills}>
+                  {["Python", "JavaScript/TypeScript", "SQL", "Machine Learning", "Data Visualization", "Next.js"].map((s) => (
+                    <span key={s} className="tag">{s}</span>
+                  ))}
+                </div>
+              </div>
+              <div className={styles.aboutStats}>
+                {[
+                  { n: "10+", l: "Dự án hoàn thành" },
+                  { n: "5+", l: "Dashboard live" },
+                  { n: "3+", l: "Năm kinh nghiệm" },
+                  { n: "100%", l: "Cam kết chất lượng" },
+                ].map((s) => (
+                  <div key={s.l} className={`glass-card ${styles.aboutStat}`}>
+                    <span className={`gradient-text ${styles.aboutStatNum}`}>{s.n}</span>
+                    <span className={styles.aboutStatLabel}>{s.l}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
