@@ -13,6 +13,8 @@ const CATEGORIES: Category[] = [
   "Data Analytics",
 ];
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const categoryColors: Record<string, string> = {
   Dashboard: "var(--accent-primary)",
   "Machine Learning": "var(--accent-secondary)",
@@ -65,7 +67,7 @@ export default function ProjectGrid() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={project.thumbnail}
+                  src={`${BASE}${project.thumbnail}`}
                   alt={project.title}
                   className={styles.thumbnailImg}
                   onError={(e) => {
