@@ -51,6 +51,7 @@
   object-fit: cover;
   display: block;
   border-radius: inherit;
+  z-index: 2;
 }
 .thumbnailFallback {
   display: flex;
@@ -58,7 +59,11 @@
   justify-content: center;
   color: var(--text-muted);
 }
-.thumbnailIcon { opacity: 0.6; }
+.thumbnailIcon {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.6;
+}
 
 /* Clickable thumbnail — glow border on hover */
 .thumbnailClickable {
