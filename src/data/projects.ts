@@ -90,7 +90,7 @@ export const projects: Project[] = [
       "Vì bảo mật thông tin khách hàng khóa (Closed Source), chỉ hiển thị sản phẩm cuối tại đây.",
     category: "Mobile App",
     tags: ["React Native", "Expo", "iOS", "Android"],
-    thumbnail: "/thumbnails/driving-app.png",
+    thumbnail: "/thumbnails/driving-app.jpg",
     playStoreUrl: "https://play.google.com/store/apps/details?id=com.trungtamgiadinh.app",
     appStoreUrl: "https://apps.apple.com/vn/app/thi-th%E1%BB%AD-b%E1%BA%B1ng-l%C3%A1i-xe-a1-a/id6758683906?l=vi",
     embedDashboard: false,
