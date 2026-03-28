@@ -57,6 +57,26 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/trinc-AI-Porfolio/dap-aqi-analysis",
     featured: true,
   },
+  {
+    id: "aml-detective",
+    title: "AML Detective — Phát Hiện Rửa Tiền Bitcoin",
+    description:
+      "Phát hiện ví Bitcoin bất hợp pháp trên dataset Elliptic++ (822K wallets) dùng Random Forest, XGBoost & Shiny dashboard (R).",
+    longDescription:
+      "Hệ thống Anti-Money Laundering phát hiện ví Bitcoin illicit trên mạng Bitcoin. " +
+      "Trích xuất 40 features từ bipartite graph (wallet ↔ transaction) bao gồm behavioral features và graph-derived features. " +
+      "Huấn luyện 3 mô hình: Logistic Regression, Random Forest (⭐ best), XGBoost GPU. " +
+      "Đánh giá robustness qua 36-window walk-forward temporal evaluation (Mean F1 = 0.9999). " +
+      "Dashboard Shiny 5 tabs: Data Analysis, Visualization (10 charts), Model Comparison, Temporal Robustness, Wallet Inspector. " +
+      "Lưu ý: kết quả F1 cao do target leakage từ graph features — xem README để hiểu hạn chế.",
+    category: "Machine Learning",
+    tags: ["R", "Shiny", "Random Forest", "XGBoost", "Graph Features", "AML", "Bitcoin"],
+    thumbnail: "/thumbnails/aml-thumbnail.png",
+    demoUrl: undefined,
+    embedDashboard: false,
+    githubUrl: "https://github.com/trinc-AI-Porfolio/aml-detective",
+    featured: true,
+  },
   // ─── DỰ ÁN MẪU (xóa khi có đủ dự án thật) ───────────────
   {
     id: "sales-dashboard",
