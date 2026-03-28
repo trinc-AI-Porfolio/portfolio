@@ -52,7 +52,7 @@ export const projects: Project[] = [
     category: "Data Analytics",
     tags: ["Python", "Streamlit", "Gemini AI", "Scikit-learn", "Pandas", "SQLite", "Plotly"],
     thumbnail: "/thumbnails/aqi-thumbnail.png",
-    demoUrl: undefined,
+    demoUrl: "https://dap-aqi-analys-vay3uhxyj5lkhtajjrq63q.streamlit.app/",
     embedDashboard: false,
     githubUrl: "https://github.com/trinc-AI-Porfolio/dap-aqi-analysis",
     featured: true,
