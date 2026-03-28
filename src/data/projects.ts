@@ -34,7 +34,7 @@ export const projects: Project[] = [
     tags: ["Python", "SQL", "Power BI", "Scikit-learn", "Pandas", "Seaborn", "VAR", "Random Forest"],
     thumbnail: "/thumbnails/stock-thumbnail.png",
     demoUrl: "https://stock-analysis-bngmvfkfqzeizfpga54yos.streamlit.app/",
-    embedDashboard: true,
+    embedDashboard: false,
     githubUrl: "https://github.com/trinc-AI-Porfolio/stock-analysis-ba",
     featured: true,
   },
