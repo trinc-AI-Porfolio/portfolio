@@ -38,6 +38,25 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/trinc-AI-Porfolio/stock-analysis-ba",
     featured: true,
   },
+  {
+    id: "dap-aqi-analysis",
+    title: "Phân Tích Chất Lượng Không Khí — AQI",
+    description:
+      "Phân tích & dự báo chỉ số AQI dùng Python, ML models và Streamlit Dashboard tích hợp Gemini AI Chatbot.",
+    longDescription:
+      "Dự án DAP cuối kỳ: Thu thập và xử lý dữ liệu AQI (Air Quality Index) từ nhiều nguồn. " +
+      "Phân tích xu hướng ô nhiễm không khí theo thời gian và khu vực địa lý. " +
+      "Train các mô hình ML (Random Forest, XGBoost) để dự báo chỉ số AQI. " +
+      "Xây dựng Streamlit Dashboard tương tác với Gemini AI Chatbot để truy vấn dữ liệu bằng ngôn ngữ tự nhiên. " +
+      "Lưu trữ dữ liệu bằng SQLite và trực quan hóa bằng Plotly, Seaborn.",
+    category: "Data Analytics",
+    tags: ["Python", "Streamlit", "Gemini AI", "Scikit-learn", "Pandas", "SQLite", "Plotly"],
+    thumbnail: "/thumbnails/aqi-thumbnail.png",
+    demoUrl: undefined,
+    embedDashboard: false,
+    githubUrl: "https://github.com/trinc-AI-Porfolio/dap-aqi-analysis",
+    featured: true,
+  },
   // ─── DỰ ÁN MẪU (xóa khi có đủ dự án thật) ───────────────
   {
     id: "sales-dashboard",
