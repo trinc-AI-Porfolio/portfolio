@@ -1,4 +1,4 @@
-export type Category = "All" | "Dashboard" | "Machine Learning" | "Web App" | "Data Analytics";
+export type Category = "All" | "Dashboard" | "Machine Learning" | "Web App" | "Data Analytics" | "Mobile App";
 
 export interface Project {
   id: string;
@@ -10,6 +10,8 @@ export interface Project {
   thumbnail: string;
   demoUrl?: string;
   githubUrl?: string;
+  playStoreUrl?: string;
+  appStoreUrl?: string;
   embedDashboard: boolean; // true = iframe embed; false = open in new tab
   featured: boolean;
 }
@@ -75,6 +77,23 @@ export const projects: Project[] = [
     demoUrl: "https://trinc-ai.shinyapps.io/aml-detective/",
     embedDashboard: false,
     githubUrl: "https://github.com/trinc-AI-Porfolio/aml-detective",
+    featured: true,
+  },
+  {
+    id: "giadinh-driving-test",
+    title: "Gia Định — Thi Thử Bằng Lái Xe A1",
+    description: "Ứng dụng di động luyện thi bằng lái xe máy đa nền tảng. Đã phát hành chính thức trên App Store và CH Play.",
+    longDescription:
+      "Sản phẩm ứng dụng di động thương mại thực tế nhắm tới người dùng chuẩn bị thi sát hạch lái xe máy A1. " +
+      "Ứng dụng cung cấp kho đề thi chuẩn cấu trúc của bộ GTVT, chấm điểm tự động, luyện tập biển báo và mẹo ghi nhớ. " +
+      "Tôi trực tiếp phát triển hệ thống bằng React Native (Expo) và quản lý xuất bản lên cả iOS (Apple App Store) và Android (Google Play Store). " +
+      "Vì bảo mật thông tin khách hàng khóa (Closed Source), chỉ hiển thị sản phẩm cuối tại đây.",
+    category: "Mobile App",
+    tags: ["React Native", "Expo", "iOS", "Android"],
+    thumbnail: "/thumbnails/driving-app.png",
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.trungtamgiadinh.app",
+    appStoreUrl: "https://apps.apple.com/vn/app/thi-th%E1%BB%AD-b%E1%BA%B1ng-l%C3%A1i-xe-a1-a/id6758683906?l=vi",
+    embedDashboard: false,
     featured: true,
   },
   // ─── DỰ ÁN MẪU (xóa khi có đủ dự án thật) ───────────────

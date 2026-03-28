@@ -1,12 +1,12 @@
 "use client";
 import { useState } from "react";
-import { ExternalLink, GitBranch, LayoutDashboard } from "lucide-react";
+import { ExternalLink, GitBranch, LayoutDashboard, Smartphone } from "lucide-react";
 import { projects, type Category } from "@/data/projects";
 import DashboardViewer from "./DashboardViewer";
 import styles from "./ProjectGrid.module.css";
 
 const CATEGORIES: Category[] = [
-  "All", "Dashboard", "Machine Learning", "Web App", "Data Analytics",
+  "All", "Dashboard", "Machine Learning", "Web App", "Data Analytics", "Mobile App",
 ];
 
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -16,6 +16,7 @@ const categoryColors: Record<string, string> = {
   "Machine Learning": "var(--accent-secondary)",
   "Web App": "var(--accent-pink)",
   "Data Analytics": "#f59e0b",
+  "Mobile App": "#6366f1",
 };
 
 export default function ProjectGrid() {
@@ -120,6 +121,27 @@ export default function ProjectGrid() {
                     >
                       <GitBranch size={14} />
                       Code
+                    </a>
+                  )}
+                  {project.playStoreUrl && (
+                    <a
+                      href={project.playStoreUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className={`btn-primary ${styles.btnSm}`}
+                    >
+                      CH Play
+                    </a>
+                  )}
+                  {project.appStoreUrl && (
+                    <a
+                      href={project.appStoreUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className={`btn-ghost ${styles.btnSm}`}
+                    >
+                      <Smartphone size={14} />
+                      App Store
                     </a>
                   )}
                 </div>
