@@ -72,7 +72,7 @@ export const projects: Project[] = [
     category: "Machine Learning",
     tags: ["R", "Shiny", "Random Forest", "XGBoost", "Graph Features", "AML", "Bitcoin"],
     thumbnail: "/thumbnails/aml-thumbnail.png",
-    demoUrl: undefined,
+    demoUrl: "https://trinc-ai.shinyapps.io/aml-detective/",
     embedDashboard: false,
     githubUrl: "https://github.com/trinc-AI-Porfolio/aml-detective",
     featured: true,
