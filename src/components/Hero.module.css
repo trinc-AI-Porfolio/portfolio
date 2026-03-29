@@ -14,6 +14,48 @@
   z-index: 1;
   padding-top: 60px;
   padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.contentLeft {
+  flex: 1;
+  max-width: 600px;
+}
+
+.contentRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeUp 0.6s 0.2s ease both;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.imageWrapper:hover {
+  transform: translateY(-5px);
+}
+
+.heroImage {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: block;
+  transform: rotate(2deg);
+  transition: transform 0.3s ease;
+}
+.heroImage:hover {
+  transform: rotate(0deg) scale(1.02);
 }
 
 .badge {
@@ -104,7 +146,27 @@
   to   { opacity: 1; transform: translateY(0); }
 }
 
-@media (max-width: 640px) {
-  .stats { gap: 28px; }
+@media (max-width: 900px) {
+  .inner { 
+    flex-direction: column; 
+    text-align: center; 
+    gap: 60px;
+  }
+  .contentLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .stats { 
+    gap: 28px; 
+    justify-content: center;
+  }
+  .stat {
+    text-align: center;
+  }
   .statValue { font-size: 28px; }
 }
