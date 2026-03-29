@@ -27,7 +27,7 @@ export default function Navbar() {
           <div className={styles.logoIcon}>
             <LayoutDashboard size={18} />
           </div>
-          <span className="gradient-text">DevPortfolio</span>
+          <span className="gradient-text">Porfolio</span>
         </a>
 
         {/* Desktop Nav */}

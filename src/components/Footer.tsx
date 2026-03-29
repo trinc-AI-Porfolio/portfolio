@@ -11,7 +11,7 @@ export default function Footer() {
             <LayoutDashboard size={16} />
           </div>
           <span className="gradient-text" style={{ fontWeight: 800, fontSize: 18 }}>
-            DevPortfolio
+            Porfolio
           </span>
         </div>
 
@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
 
         <p className={styles.copy}>
-          © {new Date().getFullYear()} DevPortfolio. Built with Next.js & ❤️
+          © {new Date().getFullYear()} Porfolio. Built with Next.js & ❤️
         </p>
       </div>
     </footer>
