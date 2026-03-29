@@ -21,8 +21,8 @@ export default function Home() {
               <span className="gradient-text">Thực Tế</span>
             </h2>
             <p className="section-subtitle" style={{ marginBottom: 48 }}>
-              Tổng hợp các dự án về data analytics, machine learning và phát
-              triển web — click để xem demo hoặc dashboard tương tác.
+              Tổng hợp các dự án về data analytics, machine learning và computer
+              vision. Bấm Xem Demo để thao tác với dự án.
             </p>
             <ProjectGrid />
           </div>
