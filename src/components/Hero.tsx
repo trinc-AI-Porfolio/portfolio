@@ -38,7 +38,7 @@ export default function Hero() {
             Website này tôi xây dựng nhằm mục đích để các bạn có thể hiểu rõ hơn về tôi. 
             Và là nơi để tôi đăng các dự án thực tế đã làm để các bạn có thể trải nghiệm 
             trực tiếp ngay trên trang mà không cần phải chạy code cầu kỳ. 
-            Cảm ơn các bạn đã dành thời gian quan tâm đến Portfolio của mình.
+            Cảm ơn các bạn đã dành thời gian quan tâm đến Portfolio của tôi.
           </p>
 
           {/* CTAs */}
