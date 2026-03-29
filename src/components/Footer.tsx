@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
 
         <p className={styles.copy}>
-          © {new Date().getFullYear()} Portfolio. Built with Next.js & ❤️
+          © {new Date().getFullYear()} portfolio.nguyencaotri. Built with Next.js
         </p>
       </div>
     </footer>
