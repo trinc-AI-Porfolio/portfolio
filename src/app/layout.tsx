@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import FloatingContact from "@/components/FloatingContact";
 
 export const metadata: Metadata = {
   title: "Portfolio | Projects & Dashboards",
@@ -13,7 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="vi">
-      <body>{children}</body>
+      <body>
+        {children}
+        <FloatingContact />
+      </body>
     </html>
   );
 }

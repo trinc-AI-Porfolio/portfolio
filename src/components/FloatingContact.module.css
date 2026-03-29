@@ -1,0 +1,86 @@
+.floatingContainer {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 1000;
+}
+
+.contactBtn {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Glassmorphism base */
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  
+  color: rgba(255,255,255,0.8);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Tooltip */
+.contactBtn::before {
+  content: attr(aria-label);
+  position: absolute;
+  right: 70px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contactBtn:hover::before {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.contactBtn:hover {
+  transform: translateY(-5px) scale(1.1);
+  color: white;
+}
+
+.zalo:hover {
+  background: #0068FF;
+  border-color: #0068FF;
+  box-shadow: 0 10px 25px rgba(0, 104, 255, 0.4);
+}
+
+.fb:hover {
+  background: #1877F2;
+  border-color: #1877F2;
+  box-shadow: 0 10px 25px rgba(24, 119, 242, 0.4);
+}
+
+.email:hover {
+  background: #EA4335;
+  border-color: #EA4335;
+  box-shadow: 0 10px 25px rgba(234, 67, 53, 0.4);
+}
+
+.zaloIcon {
+  font-weight: 800;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.5px;
+}
