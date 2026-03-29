@@ -6,7 +6,7 @@ import DashboardViewer from "./DashboardViewer";
 import styles from "./ProjectGrid.module.css";
 
 const CATEGORIES: Category[] = [
-  "All", "Dashboard", "Machine Learning", "Web App", "Data Analytics", "Mobile App",
+  "All", "Machine Learning", "Data Analytics", "Mobile App",
 ];
 
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";

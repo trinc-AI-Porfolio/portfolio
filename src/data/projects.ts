@@ -1,4 +1,4 @@
-export type Category = "All" | "Dashboard" | "Machine Learning" | "Web App" | "Data Analytics" | "Mobile App";
+export type Category = "All" | "Machine Learning" | "Data Analytics" | "Mobile App";
 
 export interface Project {
   id: string;
