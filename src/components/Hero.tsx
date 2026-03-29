@@ -1,5 +1,6 @@
 "use client";
-import { ArrowDown, GitBranch, Link2, Sparkles } from "lucide-react";
+import React, { useState } from "react";
+import { ArrowDown, GitBranch, Link2, Sparkles, X } from "lucide-react";
 import styles from "./Hero.module.css";
 
 const stats = [
@@ -9,6 +10,8 @@ const stats = [
 ];
 
 export default function Hero() {
+  const [isCvOpen, setIsCvOpen] = useState(false);
+
   return (
     <section className={styles.hero}>
       {/* Background blobs */}
@@ -84,16 +87,39 @@ export default function Hero() {
         </div>
 
         <div className={styles.contentRight}>
-          <div className={styles.imageWrapper}>
+          <div 
+            className={styles.imageWrapper}
+            onClick={() => setIsCvOpen(true)}
+          >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
               src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/thumbnails/cv.png`} 
               alt="My CV Resume" 
               className={styles.heroImage} 
             />
+            <div className={styles.cvOverlay}>
+              <span>✨ Xem Toàn Màn Hình</span>
+            </div>
           </div>
         </div>
       </div>
+
+      {/* CV Lightbox Modal */}
+      {isCvOpen && (
+        <div className={styles.lightbox} onClick={() => setIsCvOpen(false)}>
+          <button className={styles.lightboxClose} onClick={() => setIsCvOpen(false)}>
+            <X size={24} />
+          </button>
+          <div className={styles.lightboxContent} onClick={(e) => e.stopPropagation()}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img 
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/thumbnails/cv.png`} 
+              alt="My CV Resume Fullscreen" 
+              className={styles.lightboxImage} 
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
