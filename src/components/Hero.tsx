@@ -20,11 +20,7 @@ export default function Hero() {
 
       <div className={`container ${styles.inner}`}>
         <div className={styles.contentLeft}>
-          {/* Badge */}
-          <div className={styles.badge}>
-            <Sparkles size={13} />
-            <span>Open to opportunities</span>
-          </div>
+          {/* Badge Removed per user request */}
 
           {/* Heading */}
           <h1 className={styles.title}>
