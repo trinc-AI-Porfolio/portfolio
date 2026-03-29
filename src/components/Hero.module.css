@@ -84,10 +84,10 @@
 }
 
 .subtitle {
-  font-size: 18px;
+  font-size: 14px;
   color: var(--text-secondary);
-  max-width: 560px;
-  line-height: 1.7;
+  max-width: 500px;
+  line-height: 1.6;
   margin-bottom: 40px;
   animation: fadeUp 0.6s 0.2s ease both;
 }
