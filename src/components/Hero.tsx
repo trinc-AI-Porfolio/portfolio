@@ -31,13 +31,14 @@ export default function Hero() {
             Chào mừng đến với{" "}
             <span className="gradient-text">Portfolio</span>
             <br />
-            của tôi
+            của Nguyễn Cao Trị
           </h1>
 
           <p className={styles.subtitle}>
-            Tôi xây dựng các ứng dụng web, dashboard phân tích dữ liệu và mô
-            hình machine learning. Khám phá các dự án thực tế và thử nghiệm
-            trực tiếp ngay trên trang này.
+            Website này tôi xây dựng nhằm mục đích để các bạn có thể hiểu rõ hơn về tôi. 
+            Và là nơi để tôi đăng các dự án thực tế đã làm để các bạn có thể trải nghiệm 
+            trực tiếp ngay trên trang mà không cần phải chạy code cầu kỳ. 
+            Cảm ơn các bạn đã dành thời gian quan tâm đến Portfolio của mình.
           </p>
 
           {/* CTAs */}
