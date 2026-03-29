@@ -3,11 +3,7 @@ import React, { useState } from "react";
 import { ArrowDown, GitBranch, Link2, Sparkles, X } from "lucide-react";
 import styles from "./Hero.module.css";
 
-const stats = [
-  { value: "10+", label: "Dự Án" },
-  { value: "5+", label: "Dashboard" },
-  { value: "3+", label: "Năm KN" },
-];
+
 
 export default function Hero() {
   const [isCvOpen, setIsCvOpen] = useState(false);
@@ -70,17 +66,7 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Stats */}
-          <div className={styles.stats}>
-            {stats.map((s) => (
-              <div key={s.label} className={styles.stat}>
-                <span className={`gradient-text ${styles.statValue}`}>
-                  {s.value}
-                </span>
-                <span className={styles.statLabel}>{s.label}</span>
-              </div>
-            ))}
-          </div>
+
         </div>
 
         <div className={styles.contentRight}>
