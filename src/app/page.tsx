@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ProjectGrid from "@/components/ProjectGrid";
-import DashboardSection from "@/components/DashboardSection";
 import Footer from "@/components/Footer";
 import styles from "./page.module.css";
 
@@ -29,21 +28,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── Dashboards ───────────────────── */}
-        <section id="dashboards" className={`section ${styles.dashSection}`}>
-          <div className="container">
-            <p className="section-label">Dashboard</p>
-            <h2 className="section-title">
-              Live{" "}
-              <span className="gradient-text-pink">Dashboard</span>
-            </h2>
-            <p className="section-subtitle" style={{ marginBottom: 48 }}>
-              Thử nghiệm trực tiếp các dashboard phân tích dữ liệu. Chọn dự
-              án bên trái để xem dữ liệu thực tế.
-            </p>
-            <DashboardSection />
-          </div>
-        </section>
 
         {/* ── About ────────────────────────── */}
         <section id="about" className="section">
