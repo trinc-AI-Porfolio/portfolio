@@ -39,9 +39,6 @@ export default function Hero() {
               Xem Dự Án
               <ArrowDown size={16} />
             </a>
-            <a href="#dashboards" className="btn-ghost">
-              Live Dashboard
-            </a>
           </div>
 
           {/* Social links */}
