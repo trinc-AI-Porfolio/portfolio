@@ -52,10 +52,10 @@ export default function Home() {
               </div>
               <div className={styles.aboutStats}>
                 {[
-                  { n: "2026", l: "Năm Tốt nghiệp (FPTU)" },
-                  { n: "3+", l: "Năm Kinh nghiệm (Freelance)" },
-                  { n: "100%", l: "Say mê với thực hành" },
-                  { n: "10+", l: "Dự án thực tế" },
+                  { n: "Web / AI", l: "Lĩnh vực cốt lõi" },
+                  { n: "3+", l: "Năm Freelance" },
+                  { n: "100%", l: "Trách nhiệm sản phẩm" },
+                  { n: "5", l: "Dự án nổi bật" },
                 ].map((s) => (
                   <div key={s.l} className={`glass-card ${styles.aboutStat}`}>
                     <span className={`gradient-text ${styles.aboutStatNum}`}>{s.n}</span>
