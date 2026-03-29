@@ -6,7 +6,6 @@ import styles from "./Navbar.module.css";
 const navLinks = [
   { href: "#projects", label: "Dự Án" },
   { href: "#about", label: "Giới Thiệu" },
-  { href: "#contact", label: "Liên Hệ" },
 ];
 
 export default function Navbar() {
