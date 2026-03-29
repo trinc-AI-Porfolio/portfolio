@@ -39,10 +39,10 @@ export default function Home() {
                   Về <span className="gradient-text">Tôi</span>
                 </h2>
                 <p style={{ color: "var(--text-secondary)", lineHeight: 1.8, marginTop: 16 }}>
-                  Là sinh viên năm cuối chuyên ngành <strong>Trí tuệ nhân tạo</strong> tại Đại học FPT.
-                  Tôi là người có tinh thần trách nhiệm cao, chịu được áp lực tốt và luôn ưu tiên 
-                  ứng dụng thực tế hơn là lý thuyết suông. Phương châm làm việc của tôi rất rõ ràng: 
-                  <em>"Một khi đã làm, sẽ làm cho đến mức hoàn hảo"</em>. 
+                  Là sinh viên năm cuối ngành <strong>Trí Tuệ Nhân Tạo</strong> tại Đại Học FPT. 
+                  Phương châm làm việc của tôi là thà không làm nhưng làm thì phải hoàn hảo. 
+                  Tôi là một người làm việc hiệu quả dưới áp lực cao, ưu tiên thực tế, 
+                  đam mê nghiên cứu và là một người có trách nhiệm với những sản phẩm mình làm ra.
                 </p>
                 <div className={styles.skills}>
                   {["Python", "C++", "AI Development", "Computer Vision", "Embedded & Robotics", "Web (Next.js/React Native)"].map((s) => (
