@@ -39,22 +39,23 @@ export default function Home() {
                   Về <span className="gradient-text">Tôi</span>
                 </h2>
                 <p style={{ color: "var(--text-secondary)", lineHeight: 1.8, marginTop: 16 }}>
-                  Tôi là một developer đam mê xây dựng các giải pháp dữ liệu và web. 
-                  Chuyên về phân tích dữ liệu, machine learning và xây dựng dashboard 
-                  tương tác giúp doanh nghiệp đưa ra quyết định tốt hơn.
+                  Là sinh viên năm cuối chuyên ngành <strong>Trí tuệ nhân tạo</strong> tại Đại học FPT.
+                  Tôi là người có tinh thần trách nhiệm cao, chịu được áp lực tốt và luôn ưu tiên 
+                  ứng dụng thực tế hơn là lý thuyết suông. Phương châm làm việc của tôi rất rõ ràng: 
+                  <em>"Một khi đã làm, sẽ làm cho đến mức hoàn hảo"</em>. 
                 </p>
                 <div className={styles.skills}>
-                  {["Python", "JavaScript/TypeScript", "SQL", "Machine Learning", "Data Visualization", "Next.js"].map((s) => (
+                  {["Python", "C++", "AI Development", "Computer Vision", "Embedded & Robotics", "Web (Next.js/React Native)"].map((s) => (
                     <span key={s} className="tag">{s}</span>
                   ))}
                 </div>
               </div>
               <div className={styles.aboutStats}>
                 {[
-                  { n: "10+", l: "Dự án hoàn thành" },
-                  { n: "5+", l: "Dashboard live" },
-                  { n: "3+", l: "Năm kinh nghiệm" },
-                  { n: "100%", l: "Cam kết chất lượng" },
+                  { n: "2026", l: "Năm Tốt nghiệp (FPTU)" },
+                  { n: "3+", l: "Năm Kinh nghiệm (Freelance)" },
+                  { n: "100%", l: "Say mê với thực hành" },
+                  { n: "10+", l: "Dự án thực tế" },
                 ].map((s) => (
                   <div key={s.l} className={`glass-card ${styles.aboutStat}`}>
                     <span className={`gradient-text ${styles.aboutStatNum}`}>{s.n}</span>
