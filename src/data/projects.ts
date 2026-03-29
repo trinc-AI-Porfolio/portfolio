@@ -12,6 +12,7 @@ export interface Project {
   githubUrl?: string;
   playStoreUrl?: string;
   appStoreUrl?: string;
+  thumbnailFit?: "cover" | "contain";
   embedDashboard: boolean; // true = iframe embed; false = open in new tab
   featured: boolean;
 }
@@ -91,6 +92,7 @@ export const projects: Project[] = [
     category: "Mobile App",
     tags: ["React Native", "Expo", "iOS", "Android"],
     thumbnail: "/thumbnails/driving-app.jpg",
+    thumbnailFit: "contain",
     playStoreUrl: "https://play.google.com/store/apps/details?id=com.trungtamgiadinh.app",
     appStoreUrl: "https://apps.apple.com/vn/app/thi-th%E1%BB%AD-b%E1%BA%B1ng-l%C3%A1i-xe-a1-a/id6758683906?l=vi",
     embedDashboard: false,

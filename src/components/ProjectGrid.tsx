@@ -69,6 +69,7 @@ export default function ProjectGrid() {
                   src={`${BASE}${project.thumbnail}`}
                   alt={project.title}
                   className={styles.thumbnailImg}
+                  style={{ objectFit: project.thumbnailFit || "cover", backgroundColor: project.thumbnailFit === "contain" ? "white" : "transparent" }}
                   onError={(e) => {
                     (e.currentTarget as HTMLImageElement).style.display = "none";
                   }}
