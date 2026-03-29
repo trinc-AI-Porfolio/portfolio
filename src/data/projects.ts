@@ -98,4 +98,19 @@ export const projects: Project[] = [
     embedDashboard: false,
     featured: true,
   },
+  {
+    id: "dpldetec-multicam",
+    title: "DPLdetec — Đếm & Theo Dõi Người Đa Camera",
+    description: "Hệ thống phát hiện (YOLOv8) và nhận diện lại người (OSNet ReID) qua nhiều góc camera. (Đang nghiên cứu)",
+    longDescription:
+      "Dự án nghiên cứu: Xây dựng hệ thống Computer Vision theo dõi và đếm người liên tục qua nhiều hệ thống camera an ninh (Multi-Camera Tracking). " +
+      "Hệ thống sử dụng YOLOv8 để định vị người (Person Detection) và mạng OSNet để Re-Identification (ReID), giúp nhận dạng chéo cùng một người di chuyển giữa các camera. " +
+      "Hỗ trợ tính năng ghép nối hình ảnh (Panorama Stitching) và xử lý luồng relay trực tiếp. " +
+      "⚠️ LƯU Ý: Đây là dự án ĐANG TRONG QUÁ TRÌNH NGHIÊN CỨU VÀ PHÁT TRIỂN nội bộ. Chưa công bố mã nguồn (GitHub) và chưa có URL Demo trực tuyến.",
+    category: "Machine Learning",
+    tags: ["Computer Vision", "YOLOv8", "PyTorch", "OSNet", "Multi-Camera Tracking", "ReID"],
+    thumbnail: "/thumbnails/dpldetec-thumbnail.png",
+    embedDashboard: false,
+    featured: true,
+  },
 ];
