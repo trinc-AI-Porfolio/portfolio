@@ -52,7 +52,7 @@ export default function Home() {
               </div>
               <div className={styles.aboutStats}>
                 {[
-                  { n: "Web / AI", l: "Lĩnh vực cốt lõi" },
+                  { n: "AI / Robotic", l: "Lĩnh vực cốt lõi" },
                   { n: "3+", l: "Năm Freelance" },
                   { n: "100%", l: "Trách nhiệm sản phẩm" },
                   { n: "5", l: "Dự án nổi bật" },
