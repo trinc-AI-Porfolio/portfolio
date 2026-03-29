@@ -35,9 +35,11 @@ export default function FloatingContact() {
 
       {/* Email */}
       <a
-        href="mailto:trinc.work@gmail.com"
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=trinc.work@gmail.com"
+        target="_blank"
+        rel="noreferrer"
         className={`${styles.contactBtn} ${styles.email}`}
-        aria-label="Email"
+        aria-label="Gmail"
       >
         <Mail size={24} strokeWidth={1.5} />
       </a>
